@@ -22,6 +22,11 @@ class Animal {
         this._hunger = 50; // Internal state (protected by _) เป็น Private เปลี่ยนค่าได้ด้วย method ในคอนเท็กซ์นี้เท่านั้น
     }
     
+    getStatus() {
+        if(this._hunger <= 0) return "Full";
+        if(this._hunger <= 20) return "Satisfied";
+        return "Hungry";
+    }
     
     makeSound() {
         this._hunger += 2;
@@ -113,13 +118,19 @@ class Zoo {
 
   showAllAnimals() {
     console.log(`\n--- Welcome to ${this.zooName} ---`);
+    
     this.animals.forEach((animal) => {
-      // Accessing properties and calling methods
-      //   console.log(`Animal: ${animal.name} | Status: ${animal.getStatus()}`);
-      console.log(`Animal: ${animal.name}`);
-      animal.makeSound();
-      animal.eat();
-      console.log("-------------------");
+        
+        // Accessing properties and calling methods (choose one of the `console.log`)
+        console.log(`Here -> ${animal}`);
+        console.log("Here ->", animal);
+        console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(animal)));
+        console.log(`Animal: ${animal.name} | Status: ${animal.getStatus()}`);
+        // console.log(`Animal: ${animal.name}`); 
+        
+        animal.makeSound();
+        animal.eat();
+        console.log("-------------------");
     });
   }
 }
