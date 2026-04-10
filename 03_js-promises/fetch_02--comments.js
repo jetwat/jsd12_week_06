@@ -19,7 +19,7 @@ const options = {
 
         // API นี้ต้องใช้ API Key เพื่อยืนยันตัวตน
         // server จะใช้ key นี้ตรวจสอบสิทธิ์
-        "X-Api-Key": "G1c9cCD0yFEZTYw5pNE5X6vCH6tcQHQLn6gI6Lsv",
+        "X-Api-Key": "IEqXpXTslvHjWUNTobrxMFOU3hwGuKzqSVfQMdXT",
 
         // Content-Type บอกว่า payload ที่ส่งไปเป็นชนิดไหน
         // application/json = JSON format

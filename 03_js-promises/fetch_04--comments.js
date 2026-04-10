@@ -31,7 +31,7 @@ function getAllAnimalsByLetter(letter) {
 
                 // API นี้ต้องใช้ API key เพื่อยืนยันตัวตน
                 // key-value pair ใน object
-                "X-Api-Key": "G1c9cCD0yFEZTYw5pNE5X6vCH6tcQHQLn6gI6Lsv"
+                "X-Api-Key": "IEqXpXTslvHjWUNTobrxMFOU3hwGuKzqSVfQMdXT"
             },
         })
 

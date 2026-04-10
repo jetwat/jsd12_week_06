@@ -9,7 +9,7 @@ function getAllAnimalsByLetter(letter) {
     // ใช้ fetch() เพื่อเรียก API
     return fetch(url, {
         // ส่ง API key ไปใน header เพื่อยืนยันสิทธิ์การใช้งาน API
-        headers: { "X-Api-Key": "G1c9cCD0yFEZTYw5pNE5X6vCH6tcQHQLn6gI6Lsv" },
+        headers: { "X-Api-Key": "IEqXpXTslvHjWUNTobrxMFOU3hwGuKzqSVfQMdXT" },
     })
 
         // เมื่อ server ตอบกลับมา response จะยังเป็น raw data
