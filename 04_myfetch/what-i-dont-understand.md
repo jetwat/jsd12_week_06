@@ -45,3 +45,5 @@
 - ตอบคำถามหลัก: เพราะเป็นรูปย่อของ arrow function ถ้าเขียนในบรรทัดเดียวกันแบบไม่มีปีกกา จะเท่ากับมีคำสั่ง `return` ให้ _-- เทียบ แบบสั้น: `res => res.json()` = แบบเต็ม: `(res) => { return res.json(); }`_
 
 ---
+
+> I'm still curious about many points in this chat. → [link](https://gemini.google.com/share/6e1abd405d37) _-- แต่ได้แนวทางการทำความเข้าใจโค้ดเพิ่ม ด้วยการให้รันและแทนที่ตัวแปรทีละสเต็ปเหมือน Excel evaluate formula tool โดยใช้คีย์เวิร์ด `explain in "subsitution model"`_
