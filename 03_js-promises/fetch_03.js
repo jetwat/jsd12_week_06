@@ -7,6 +7,7 @@ function getAllAnimalsByLetter(letter) {
     })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data);
             if (data.length > 0) {
                 allResults.push(...data);
             }
