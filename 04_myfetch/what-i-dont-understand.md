@@ -41,7 +41,7 @@
 ---
 ### `.json()` มัน `return` ในตัวมันหรอ ทำไมไม่ต้องใส่ `return` แต่เชนต่อมาเอาไปใช้ต่อได้ ?
 
-- [GemAns, please take a look](https://gemini.google.com/share/c8f4ff931ad8) _-- มีคำถามต่อเนื่องหลายประเด็น_
+- [GemAns, please have a look](https://gemini.google.com/share/c8f4ff931ad8) **_-- มีคำถามต่อเนื่องหลายประเด็น_**
 - ตอบคำถามหลัก: เพราะเป็นรูปย่อของ arrow function ถ้าเขียนในบรรทัดเดียวกันแบบไม่มีปีกกา จะเท่ากับมีคำสั่ง `return` ให้ _-- เทียบ แบบสั้น: `res => res.json()` = แบบเต็ม: `(res) => { return res.json(); }`_
 
 ---
