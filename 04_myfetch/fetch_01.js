@@ -1,0 +1,35 @@
+function getAllAnimalsByLetter(letter) {
+    let allResults = [];
+
+    function fetchNextPage() {
+        const url = `https://api.api-ninjas.com/v1/animals?name=${letter}`;
+
+        return fetch(url, {
+            headers: { "X-Api-Key": "IEqXpXTslvHjWUNTobrxMFOU3hwGuKzqSVfQMdXT" },
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                let sliceData = data.slice(0, 20);
+                if (sliceData.length === 0) {
+                    console.log(
+                        `Found ${allResults.length} animals containing the letter ${letter}`,
+                    );
+                    console.log(allResults);
+                    return allResults;
+                }
+
+                allResults.push(...sliceData);
+            });
+    }
+
+    return fetchNextPage();
+}
+
+getAllAnimalsByLetter("a")
+    .then((animals) => {
+        console.log("Finished fetching all pages.");
+        console.log(animals.map((animal) => animal.name));
+    })
+    .catch((error) => {
+        console.error("Something went wrong!", error);
+    });
