@@ -35,7 +35,7 @@
 ### `.then()` ครั้งที่สอง มอง `.then()` ครั้งแรก เป็น `resolve()` or `reject()` หรือไม่ หรือแค่ครั้งแรกเท่านั้น (Promise ก่อน `.then()` แรก) ที่ให้ผล เป็น `resolve()` or `reject()` ?
 
 - [Gemini Answer](https://gemini.google.com/share/7c35888b6223)
-- _-- `.then()` เช็ค state เชนก่อนหน้า ไม่ใช่แค่ Promise_
+- _-- `.then()` เช็ค state เชนก่อนหน้า ไม่ใช่แค่ Promise แรกสุด เนื่องจาก ค่าที่ได้จาก promise method เชนก่อนหน้า มีค่าเป็น Promise อยู่แล้ว, `.then()` ต่อมาจึงเช็ค state และแกะข้อมูลได้_
 
 
 ---
